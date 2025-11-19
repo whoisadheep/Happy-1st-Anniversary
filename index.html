@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radha's Anniversary App ❤️</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary: #ff4d6d;
@@ -53,9 +56,11 @@
                 transform: translateY(0) rotate(0deg);
                 opacity: 0.6;
             }
+
             50% {
                 opacity: 0.8;
             }
+
             100% {
                 transform: translateY(-100vh) rotate(360deg);
                 opacity: 0;
@@ -67,7 +72,7 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
             padding: 15px;
             border-radius: 50%;
@@ -76,7 +81,7 @@
             z-index: 1000;
             animation: pulse 2s ease-in-out infinite;
             border: 2px solid white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
         }
 
@@ -90,12 +95,21 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         @keyframes spin {
-            100% { transform: rotate(360deg); }
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         /* Lock Screen */
@@ -120,21 +134,41 @@
         }
 
         @keyframes wiggle {
-            0%, 100% { transform: rotate(0deg) scale(1); }
-            25% { transform: rotate(-15deg) scale(1.05); }
-            50% { transform: rotate(0deg) scale(1.1); }
-            75% { transform: rotate(15deg) scale(1.05); }
+
+            0%,
+            100% {
+                transform: rotate(0deg) scale(1);
+            }
+
+            25% {
+                transform: rotate(-15deg) scale(1.05);
+            }
+
+            50% {
+                transform: rotate(0deg) scale(1.1);
+            }
+
+            75% {
+                transform: rotate(15deg) scale(1.05);
+            }
         }
 
         @keyframes glow {
-            0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 77, 109, 0.5)); }
-            50% { filter: drop-shadow(0 0 40px rgba(255, 77, 109, 0.9)); }
+
+            0%,
+            100% {
+                filter: drop-shadow(0 0 20px rgba(255, 77, 109, 0.5));
+            }
+
+            50% {
+                filter: drop-shadow(0 0 40px rgba(255, 77, 109, 0.9));
+            }
         }
 
         .lock-screen h2 {
             color: #fff;
             margin-top: 30px;
-            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             font-size: 2rem;
             animation: fadeInUp 1s ease-out;
         }
@@ -151,6 +185,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -176,7 +211,7 @@
             background: var(--glass);
             backdrop-filter: blur(15px);
             border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             border: 2px solid rgba(255, 255, 255, 0.6);
             padding: 40px 30px;
             display: none;
@@ -207,6 +242,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -229,7 +265,7 @@
             cursor: pointer;
             font-size: 1rem;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             background: linear-gradient(135deg, #ff758f 0%, #ff4d6d 100%);
             color: white;
             position: relative;
@@ -244,7 +280,7 @@
             width: 0;
             height: 0;
             border-radius: 50%;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             transform: translate(-50%, -50%);
             transition: width 0.6s, height 0.6s;
         }
@@ -268,7 +304,8 @@
         }
 
         /* Typography */
-        h1, h2 {
+        h1,
+        h2 {
             font-family: 'Dancing Script', cursive;
             text-align: center;
             color: var(--primary);
@@ -290,9 +327,11 @@
                 transform: scale(0) rotate(-180deg);
                 opacity: 0;
             }
+
             50% {
                 transform: scale(1.1) rotate(10deg);
             }
+
             100% {
                 transform: scale(1) rotate(0deg);
                 opacity: 1;
@@ -312,7 +351,7 @@
             justify-content: center;
             font-size: 4rem;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             animation: profilePop 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s both;
             position: relative;
         }
@@ -321,9 +360,11 @@
             0% {
                 transform: scale(0) rotate(0deg);
             }
+
             50% {
                 transform: scale(1.1) rotate(180deg);
             }
+
             100% {
                 transform: scale(1) rotate(360deg);
             }
@@ -339,10 +380,13 @@
         }
 
         @keyframes ringPulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
                 opacity: 1;
             }
+
             50% {
                 transform: scale(1.1);
                 opacity: 0.5;
@@ -377,7 +421,7 @@
             padding: 20px;
             border-radius: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             border-left: 6px solid var(--primary);
             animation: cardSlideIn 0.6s ease-out both;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -388,15 +432,24 @@
             box-shadow: 0 12px 30px rgba(255, 77, 109, 0.3);
         }
 
-        .timeline-card:nth-child(1) { animation-delay: 0.1s; }
-        .timeline-card:nth-child(2) { animation-delay: 0.2s; }
-        .timeline-card:nth-child(3) { animation-delay: 0.3s; }
+        .timeline-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .timeline-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .timeline-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
 
         @keyframes cardSlideIn {
             from {
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -418,8 +471,15 @@
         }
 
         @keyframes imgFloat {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .timeline-card h3 {
@@ -439,7 +499,7 @@
             padding: 25px;
             border-radius: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             animation: boxBounce 0.6s ease-out;
         }
 
@@ -448,9 +508,11 @@
                 transform: scale(0);
                 opacity: 0;
             }
+
             50% {
                 transform: scale(1.05);
             }
+
             100% {
                 transform: scale(1);
                 opacity: 1;
@@ -472,7 +534,7 @@
             margin: 20px 0;
             position: relative;
             border: 3px solid white;
-            box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .meter-fill {
@@ -491,36 +553,18 @@
         }
 
         @keyframes gradientMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .letter-box {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    margin: 20px 0;
-    font-family: 'Courier New', monospace;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    min-height: 200px;
-    max-height: 250px;
-    overflow-y: auto;
-    line-height: 1.8;
-    color: #333;
-}
+            0% {
+                background-position: 0% 50%;
+            }
 
-/* Pink custom scrollbar for letter box only */
-.letter-box::-webkit-scrollbar {
-    width: 8px;
-}
-.letter-box::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #ff4d6d 0%, #ff8fa3 100%);
-    border-radius: 8px;
-}
-.letter-box::-webkit-scrollbar-track {
-    background: #ffe5ec;
-    border-radius: 8px;
-}
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
         .btn-container {
             display: flex;
@@ -531,7 +575,8 @@
             min-height: 60px;
         }
 
-        .btn-yes, .btn-no {
+        .btn-yes,
+        .btn-no {
             padding: 12px 35px;
             border-radius: 50px;
             border: none;
@@ -539,7 +584,7 @@
             cursor: pointer;
             font-size: 1.1rem;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .btn-yes {
@@ -565,7 +610,7 @@
             border-radius: 15px;
             margin: 20px 0;
             font-family: 'Courier New', monospace;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             min-height: 300px;
             animation: letterUnfold 1s ease-out;
             line-height: 1.8;
@@ -577,6 +622,7 @@
                 transform: rotateX(-90deg);
                 opacity: 0;
             }
+
             100% {
                 transform: rotateX(0deg);
                 opacity: 1;
@@ -621,6 +667,7 @@
                 opacity: 1;
                 transform: scale(0) rotate(0deg);
             }
+
             100% {
                 opacity: 0;
                 transform: scale(1.5) rotate(180deg) translateY(-50px);
@@ -635,20 +682,45 @@
                 min-height: 450px;
             }
 
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
             .profile-pic {
                 width: 120px;
                 height: 120px;
                 font-size: 3rem;
             }
 
-            .gift-box { font-size: 5rem; }
+            .gift-box {
+                font-size: 5rem;
+            }
         }
 
+        .img-holder {
+            width: 120px;
+            /* smaller width */
+            height: 120px;
+            /* smaller height */
+            background: #ffe5ec;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 0 auto 10px auto;
+            /* center the image */
+        }
+
+        .img-holder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Floating Hearts Background -->
@@ -667,12 +739,12 @@
 
     <!-- Main App Container -->
     <div id="app-container">
-        
+
         <!-- Screen 1: Home -->
         <div id="home" class="screen active">
             <div class="screen-content">
                 <div class="profile-pic">
-                    <span>👸</span>
+                    <img src="0.jpg" alt="" srcset="">
                 </div>
                 <h1>Happy Anniversary<br>Radha! ❤️</h1>
                 <p style="text-align: center; margin-top: 10px; color: #666; font-size: 1.1rem;">
@@ -685,6 +757,7 @@
             </div>
             <div class="progress-dots">
                 <div class="dot active"></div>
+                <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
@@ -724,14 +797,42 @@
                 <div class="dot active"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
+                <div class="dot"></div>
             </div>
         </div>
+
+        <!-- Screen 3: Video Section -->
+        <div id="video" class="screen">
+            <div class="screen-content">
+                <h2>Video Yaadein 🎥</h2>
+                <div style="width:100%; display:flex; justify-content:center; align-items:center;">
+                    <video controls
+                        style="width:100%; max-width:350px; border-radius:14px; box-shadow:0 4px 16px #ff8fa370;">
+                        <source src="Snapchat-1737731869.mp4" type="video/mp4">
+                        Video abhi load nahi ho paaya.
+                    </video>
+                </div>
+                <p style="text-align:center; margin-top:18px; color:#555;">Hamari yaadon ka ek chota video!</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn secondary" onclick="prevScreen()">← Peeche</button>
+                <button class="nav-btn" onclick="nextScreen()">Aage Chalo →</button>
+            </div>
+            <div class="progress-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
 
         <!-- Screen 3: Fun Zone -->
         <div id="fun" class="screen">
             <div class="screen-content">
                 <h2>Fun Zone 🎮</h2>
-                
+
                 <div class="fun-box">
                     <h3>❤️ Pyaar Ka Meter</h3>
                     <p style="font-size: 0.9rem; color: #666;">Jaldi jaldi tap karo dil bharne ke liye!</p>
@@ -757,6 +858,7 @@
             <div class="progress-dots">
                 <div class="dot"></div>
                 <div class="dot"></div>
+                <div class="dot"></div>
                 <div class="dot active"></div>
                 <div class="dot"></div>
             </div>
@@ -778,7 +880,8 @@
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
-                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot-active"></div>
             </div>
         </div>
 
@@ -792,7 +895,7 @@
         function updateScreen() {
             // Hide all screens
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-            
+
             // Show current screen
             document.getElementById(screens[currentScreen]).classList.add('active');
 
@@ -802,7 +905,7 @@
             });
 
             // Start typing animation on letter screen
-            if(screens[currentScreen] === 'letter') {
+            if (screens[currentScreen] === 'letter') {
                 startTyping();
             }
 
@@ -811,14 +914,14 @@
         }
 
         function nextScreen() {
-            if(currentScreen < screens.length - 1) {
+            if (currentScreen < screens.length - 1) {
                 currentScreen++;
                 updateScreen();
             }
         }
 
         function prevScreen() {
-            if(currentScreen > 0) {
+            if (currentScreen > 0) {
                 currentScreen--;
                 updateScreen();
             }
@@ -848,7 +951,7 @@
                 heart.style.animationDuration = (Math.random() * 5 + 8) + 's';
                 heart.style.animationDelay = Math.random() * 2 + 's';
                 container.appendChild(heart);
-                
+
                 setTimeout(() => heart.remove(), 12000);
             }, 2000);
         }
@@ -856,14 +959,14 @@
         // Love Meter Game
         let lovePercent = 0;
         function fillLove() {
-            if(lovePercent < 100) {
+            if (lovePercent < 100) {
                 lovePercent += 10;
                 const fill = document.getElementById('fillMeter');
                 fill.style.width = lovePercent + '%';
                 fill.innerText = lovePercent + '%';
-                
+
                 // Create floating hearts
-                for(let i = 0; i < 3; i++) {
+                for (let i = 0; i < 3; i++) {
                     setTimeout(() => {
                         const heart = document.createElement('div');
                         heart.innerText = '❤️';
@@ -875,13 +978,13 @@
                         heart.style.animation = 'floatUpFade 2s ease-out forwards';
                         heart.style.pointerEvents = 'none';
                         document.body.appendChild(heart);
-                        
+
                         setTimeout(() => heart.remove(), 2000);
                     }, i * 100);
                 }
             }
-            
-            if(lovePercent >= 100) {
+
+            if (lovePercent >= 100) {
                 document.getElementById('fillMeter').innerText = "FULL LOVE! ❤️";
                 createConfetti();
             }
@@ -904,19 +1007,43 @@
         document.head.appendChild(style);
 
         // Prank Button (Run Away)
+        // Robust runAway for mouse/touch/pointer devices
         function runAway() {
             const btn = document.getElementById('noBtn');
-            const container = btn.parentElement;
-            const containerRect = container.getBoundingClientRect();
-            
-            const maxX = containerRect.width - btn.offsetWidth - 40;
-            const maxY = containerRect.height - btn.offsetHeight - 40;
-            
-            const x = Math.random() * maxX - maxX/2;
-            const y = Math.random() * maxY - maxY/2;
-            
-            btn.style.transform = `translate(${x}px, ${y}px) rotate(${Math.random() * 360}deg)`;
+
+            // Get viewport size and button size
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+            const bw = btn.offsetWidth;
+            const bh = btn.offsetHeight;
+
+            // Safe margins so button doesn't go off-screen
+            const margin = 3;
+            const maxX = vw - bw - margin;
+            const maxY = vh - bh - margin;
+
+            // Random position within safe bounds
+            const x = Math.random() * maxX;
+            const y = Math.random() * maxY;
+
+            // Use translate to move; keep a small rotation for fun
+            btn.style.transition = 'transform 200ms ease';
+            btn.style.position = 'relative';
+            btn.style.transform = `translate(${x - btn.offsetLeft}px, ${y - btn.offsetTop}px) rotate(${Math.random() * 40 - 20}deg)`;
         }
+
+        // Attach listeners once DOM is ready (handles mouse, touch and pointer)
+        window.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('noBtn');
+            if (!btn) return;
+
+            // For pointer-capable devices (recommended)
+            btn.addEventListener('pointerenter', runAway); // desktop hover or stylus
+            // For touch and clicks
+            btn.addEventListener('touchstart', (e) => { e.preventDefault(); runAway(); }, { passive: false });
+            btn.addEventListener('click', runAway);
+        });
+
 
         // Typewriter Effect
         const message = `Meri Jaan Radha,
@@ -931,18 +1058,18 @@ Main promise karta hoon ki aage bhi tumhe aise hi pareshan karunga aur dher saar
 
 Forever Yours,
 (Apna Naam)`;
-        
+
         let typed = false;
-        
+
         function startTyping() {
-            if(typed) return;
-            
+            if (typed) return;
+
             const element = document.getElementById('typewriter');
             element.innerText = "";
             let i = 0;
-            
+
             function typeChar() {
-                if(i < message.length) {
+                if (i < message.length) {
                     element.innerText += message.charAt(i);
                     i++;
                     setTimeout(typeChar, 50);
@@ -954,7 +1081,7 @@ Forever Yours,
 
         // Confetti Effect
         function createConfetti() {
-            for(let i = 0; i < 100; i++) {
+            for (let i = 0; i < 100; i++) {
                 setTimeout(() => {
                     const confetti = document.createElement('div');
                     confetti.style.position = 'fixed';
@@ -962,7 +1089,7 @@ Forever Yours,
                     confetti.style.top = '-10px';
                     confetti.style.width = '10px';
                     confetti.style.height = '10px';
-                    confetti.style.backgroundColor = ['#ff0', '#f0f', '#0ff', '#f00', '#0f0'][Math.floor(Math.random()*5)];
+                    confetti.style.backgroundColor = ['#ff0', '#f0f', '#0ff', '#f00', '#0f0'][Math.floor(Math.random() * 5)];
                     confetti.style.borderRadius = '50%';
                     confetti.style.transition = 'all 3s ease-in';
                     confetti.style.zIndex = '9999';
@@ -981,7 +1108,7 @@ Forever Yours,
 
         // Sparkle Effect on Screen Transition
         function createSparkles() {
-            for(let i = 0; i < 15; i++) {
+            for (let i = 0; i < 15; i++) {
                 setTimeout(() => {
                     const sparkle = document.createElement('div');
                     sparkle.className = 'sparkle';
@@ -990,7 +1117,7 @@ Forever Yours,
                     sparkle.style.top = Math.random() * 100 + 'vh';
                     sparkle.style.fontSize = (Math.random() * 20 + 10) + 'px';
                     document.body.appendChild(sparkle);
-                    
+
                     setTimeout(() => sparkle.remove(), 1000);
                 }, i * 50);
             }
@@ -1014,4 +1141,5 @@ Forever Yours,
         });
     </script>
 </body>
+
 </html>
